@@ -56,6 +56,7 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
+    implementation(libs.androidx.runtime.livedata)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -90,6 +91,7 @@ dependencies {
     // Retrofit
     implementation(libs.retrofit)
     implementation(libs.retrofit.gson)
+    implementation(libs.logging.interceptor)
 
     // Coroutines
     implementation(libs.coroutines.core)
@@ -97,4 +99,13 @@ dependencies {
 
     // Picasso
     implementation(libs.picasso)
+
+    implementation(libs.androidx.runtime)
+
+
+
+
+    implementation(project(":domain"))
+    implementation(project(":data"))
+    implementation(project(":core"))
 }

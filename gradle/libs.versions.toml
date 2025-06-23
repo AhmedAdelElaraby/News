@@ -9,6 +9,7 @@ lifecycleRuntimeKtx = "2.9.1"
 activityCompose = "1.10.1"
 composeBom = "2025.06.01"
 appcompat = "1.7.1"
+loggingInterceptor = "4.12.0"
 material = "1.12.0"
 
 
@@ -19,15 +20,18 @@ compose = "1.8.3"
 
 hilt = "2.51.1"
 hilt-navigation = "1.2.0"
-lifecycle = "2.9.1"
+lifecycle = "2.8.1"
 retrofit = "2.9.0"
 room = "2.7.2"
 coroutines = "1.7.3"
 picasso = "2.71828"
+runtime = "1.6.7"
+runtimeLivedata = "1.8.3"
 
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+androidx-runtime = { module = "androidx.compose.runtime:runtime", version.ref = "runtime" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
 androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
@@ -42,6 +46,7 @@ androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-man
 androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
 androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
 androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+logging-interceptor = { module = "com.squareup.okhttp3:logging-interceptor", version.ref = "loggingInterceptor" }
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
 
 
@@ -86,6 +91,7 @@ coroutines-android = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-androi
 
 # Picasso
 picasso = { module = "com.squareup.picasso:picasso", version.ref = "picasso" }
+androidx-runtime-livedata = { group = "androidx.compose.runtime", name = "runtime-livedata", version.ref = "runtimeLivedata" }
 
 ## Testing (اختياري)
 #junit = { module = "junit:junit", version = "4.13.2" }
